@@ -5,142 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Everyday Analyst | River Valley Analytics</title>
     <meta name="description" content="The Everyday Analyst is Mitch Graves's newsletter about using data at work, written for people who didn't necessarily sign up to be analysts.">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <meta property="og:title" content="The Everyday Analyst">
+    <meta property="og:description" content="A newsletter about using data at work, for people who didn't necessarily sign up to be analysts.">
+    <meta property="og:image" content="https://rivervalleyanalytics.com/public/images/river-valley-logo.png">
+    <meta property="og:url" content="https://rivervalleyanalytics.com/the-everyday-analyst.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="public/images/river-valley-logo.png">
+    <link rel="stylesheet" href="site.css?v=1">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-content">
-                <a href="index.html" class="nav-brand">
-                    <img src="public/images/river-valley-logo.png" alt="River Valley Analytics Logo" class="nav-logo">
-                    <span class="nav-title">River Valley Analytics</span>
-                </a>
-
-                <div class="nav-links">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About Me</a>
-                    <a href="work-with-me.html" class="nav-link">Work With Me</a>
-                    <a href="the-everyday-analyst.html" class="nav-link active">The Everyday Analyst</a>
-                </div>
-            </div>
+    <nav class="site-nav">
+        <div class="container site-nav-inner">
+            <a href="index.html" class="brand">
+                <img src="public/images/river-valley-logo.png" alt="" class="logo">
+                <span>River Valley Analytics</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work-with-me.html">Work With Me</a></li>
+                <li><a href="the-everyday-analyst.html" aria-current="page">The Everyday Analyst</a></li>
+                <li><a href="mailto:mitch@rivervalleyanalytics.com?subject=Let's talk" class="btn btn-sm">Let's talk</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="analyst-page">
-        <div class="container">
-            <!-- Header Section -->
-            <div class="analyst-header">
-                <h1 class="analyst-title">
-                    THE <span class="analyst-title-accent">EVERYDAY</span><br>
-                    <span class="analyst-title-secondary">ANALYST</span>
-                </h1>
-                <div class="analyst-divider"></div>
-                <p class="analyst-description">
-                    My newsletter about using data at work, written for people who didn't necessarily sign up to be analysts.
-                </p>
+    <main>
+        <header class="page-hero">
+            <div class="container">
+                <span class="eyebrow">Newsletter</span>
+                <h1>The Everyday Analyst</h1>
+                <div class="divider"></div>
+                <p>My newsletter about using data at work, written for people who didn't necessarily sign up to be analysts.</p>
+            </div>
+        </header>
+
+        <div class="container split">
+            <div class="card card-slate subscribe-card">
+                <h2>Subscribe</h2>
+                <p>It's been quiet lately. Subscribe and you'll be the first to know when it picks back up.</p>
+                <iframe src="https://theeverydayanalyst.substack.com/embed" title="Subscribe to The Everyday Analyst" frameborder="0" scrolling="no"></iframe>
+                <a href="https://theeverydayanalyst.substack.com/archive" target="_blank" rel="noopener noreferrer" class="link-arrow">Read all posts on Substack</a>
             </div>
 
-            <!-- Main Content Grid -->
-            <div class="analyst-grid">
-                <!-- Subscribe Section -->
-                <div class="analyst-column">
-                    <div class="analyst-section analyst-newsletter">
-                        <div class="analyst-section-header">
-                            <span class="analyst-icon">✉</span>
-                            <h2 class="analyst-section-title">Subscribe</h2>
-                        </div>
-
-                        <p class="analyst-section-description">
-                            It's been quiet lately. Subscribe and you'll be the first to know when it picks back up.
-                        </p>
-
-                        <iframe src="https://theeverydayanalyst.substack.com/embed" class="analyst-embed"
-                                title="Subscribe to The Everyday Analyst" frameborder="0" scrolling="no"></iframe>
-
-                        <a href="https://theeverydayanalyst.substack.com/archive" target="_blank" rel="noopener noreferrer"
-                           class="btn btn-newsletter-cta">
-                            Read All Posts on Substack
-                        </a>
-                    </div>
+            <div class="post-list">
+                <div>
+                    <h2>A few favorites</h2>
+                    <div class="divider"></div>
                 </div>
 
-                <!-- Featured Posts Section -->
-                <div class="analyst-column">
-                    <div class="analyst-section analyst-training">
-                        <div class="analyst-section-header">
-                            <span class="analyst-icon">★</span>
-                            <h2 class="analyst-section-title">A Few Favorites</h2>
-                        </div>
+                <a href="https://theeverydayanalyst.substack.com/p/stats-lessons-from-the-tour-de-france" target="_blank" rel="noopener noreferrer" class="card">
+                    <span class="post-kicker">Statistics</span>
+                    <h3>Stats Lessons from The Tour de France</h3>
+                    <p>What one time trial stage teaches about mean vs. median, outliers, and context.</p>
+                </a>
 
-                        <div class="analyst-posts">
-                            <a href="https://theeverydayanalyst.substack.com/p/stats-lessons-from-the-tour-de-france" target="_blank" rel="noopener noreferrer" class="analyst-post">
-                                <h3 class="analyst-post-title">Stats Lessons from The Tour de France</h3>
-                                <p class="analyst-post-text">
-                                    What one time trial stage teaches about mean vs. median, outliers, and context.
-                                </p>
-                            </a>
+                <a href="https://theeverydayanalyst.substack.com/p/how-to-avoid-the-most-common-data" target="_blank" rel="noopener noreferrer" class="card">
+                    <span class="post-kicker">Data traps</span>
+                    <h3>How to Avoid the Most Common Data Trap</h3>
+                    <p>Correlation vs. causation, and why I'm petitioning to ban Nicolas Cage from Hollywood.</p>
+                </a>
 
-                            <a href="https://theeverydayanalyst.substack.com/p/how-to-avoid-the-most-common-data" target="_blank" rel="noopener noreferrer" class="analyst-post">
-                                <h3 class="analyst-post-title">How to Avoid the Most Common Data Trap</h3>
-                                <p class="analyst-post-text">
-                                    Correlation vs. causation, and why I'm petitioning to ban Nicolas Cage from Hollywood.
-                                </p>
-                            </a>
-
-                            <a href="https://theeverydayanalyst.substack.com/p/experimentation-think-like-a-scientist" target="_blank" rel="noopener noreferrer" class="analyst-post">
-                                <h3 class="analyst-post-title">Experimentation: Think Like a Scientist</h3>
-                                <p class="analyst-post-text">
-                                    A beginner's walkthrough of planning, running, and reading your first A/B test.
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <a href="https://theeverydayanalyst.substack.com/p/experimentation-think-like-a-scientist" target="_blank" rel="noopener noreferrer" class="card">
+                    <span class="post-kicker">Experimentation</span>
+                    <h3>Experimentation: Think Like a Scientist</h3>
+                    <p>A beginner's walkthrough of planning, running, and reading your first A/B test.</p>
+                </a>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="public/images/river-valley-logo.png" alt="River Valley Analytics Logo" class="footer-logo-img">
-                        <h3 class="footer-brand-title">River Valley Analytics</h3>
+                <div>
+                    <div class="footer-brand">
+                        <img src="public/images/river-valley-logo.png" alt="" class="logo-light">
+                        <span>River Valley Analytics</span>
                     </div>
-                    <p class="footer-brand-text">Data help for small businesses, startups, and healthcare teams.</p>
+                    <p>Data help for small businesses, startups, and healthcare teams.</p>
                 </div>
-
-                <div class="footer-contact">
-                    <h4 class="footer-section-title">Contact</h4>
-                    <div class="footer-links">
-                        <a href="mailto:mitch@rivervalleyanalytics.com" class="footer-link">
-                            <span>mitch@rivervalleyanalytics.com</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/gravesmitchell/" target="_blank" rel="noopener noreferrer" class="footer-link">
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:mitch@rivervalleyanalytics.com">mitch@rivervalleyanalytics.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/gravesmitchell/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
                 </div>
-
-                <div class="footer-newsletter">
-                    <h4 class="footer-section-title">Newsletter</h4>
-                    <p class="footer-newsletter-text">Occasional posts from The Everyday Analyst</p>
-                    <a href="https://theeverydayanalyst.substack.com/" target="_blank" rel="noopener noreferrer" class="btn btn-newsletter">
-                        Subscribe
-                    </a>
+                <div>
+                    <h4>Newsletter</h4>
+                    <ul>
+                        <li><a href="the-everyday-analyst.html">The Everyday Analyst</a></li>
+                        <li><a href="https://theeverydayanalyst.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe on Substack</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 River Valley Analytics. All rights reserved.</p>
-            </div>
+            <div class="footer-bottom">© 2026 River Valley Analytics</div>
         </div>
     </footer>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="site.js"></script>
 </body>
 </html>

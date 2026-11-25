@@ -5,217 +5,239 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work With Me | River Valley Analytics</title>
     <meta name="description" content="Data consulting and training for small businesses in Western Mass, startups, and healthcare organizations. Every project starts with a free 30-minute call.">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <meta property="og:title" content="Work With Me | River Valley Analytics">
+    <meta property="og:description" content="Data consulting and training for small businesses, startups, and healthcare organizations.">
+    <meta property="og:image" content="https://rivervalleyanalytics.com/public/images/river-valley-logo.png">
+    <meta property="og:url" content="https://rivervalleyanalytics.com/work-with-me.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="public/images/river-valley-logo.png">
+    <link rel="stylesheet" href="site.css?v=1">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-content">
-                <a href="index.html" class="nav-brand">
-                    <img src="public/images/river-valley-logo.png" alt="River Valley Analytics Logo" class="nav-logo">
-                    <span class="nav-title">River Valley Analytics</span>
-                </a>
-
-                <div class="nav-links">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About Me</a>
-                    <a href="work-with-me.html" class="nav-link active">Work With Me</a>
-                    <a href="the-everyday-analyst.html" class="nav-link">The Everyday Analyst</a>
-                </div>
-            </div>
+    <nav class="site-nav">
+        <div class="container site-nav-inner">
+            <a href="index.html" class="brand">
+                <img src="public/images/river-valley-logo.png" alt="" class="logo">
+                <span>River Valley Analytics</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work-with-me.html" aria-current="page">Work With Me</a></li>
+                <li><a href="the-everyday-analyst.html">The Everyday Analyst</a></li>
+                <li><a href="mailto:mitch@rivervalleyanalytics.com?subject=Let's talk" class="btn btn-sm">Let's talk</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="page-content">
-        <div class="container">
-            <div class="page-header">
-                <h1 class="page-title">
-                    Work <span class="page-title-accent">With Me</span>
-                </h1>
-                <div class="page-divider"></div>
-                <p class="page-description">
-                    I keep my client list small so every project gets my full attention. Here's what that usually looks like.
-                </p>
+    <main>
+        <header class="page-hero">
+            <div class="container">
+                <span class="eyebrow">Work With Me</span>
+                <h1>How I can help</h1>
+                <div class="divider"></div>
+                <p>I keep my client list small so every project gets my full attention. Here's what that usually looks like.</p>
             </div>
+        </header>
 
-            <!-- Two-Column Layout -->
-            <div class="services-grid">
-                <!-- Left Column: Consulting -->
-                <div class="services-column">
-                    <div class="service-card service-card-primary">
-                        <h2 class="service-card-title">Small Businesses in Western Mass</h2>
-                        <p class="service-card-lead">
-                            You know your business. You just don't have time to dig through five different tools to figure out
-                            how it's doing.
-                        </p>
-                        <div class="service-list">
-                            <div class="service-item">
-                                <h3 class="service-item-title">Dashboards &amp; Reporting</h3>
-                                <p class="service-item-description">
-                                    One place to see sales, costs, and customers, built from the tools you already use.
-                                </p>
-                            </div>
-
-                            <div class="service-item">
-                                <h3 class="service-item-title">Automating the Busywork</h3>
-                                <p class="service-item-description">
-                                    If someone on your team spends Friday afternoons copying numbers into a spreadsheet, we can
-                                    probably fix that. Sometimes AI is the right tool for it. Sometimes a simple script is.
-                                </p>
-                            </div>
-
-                            <div class="service-item">
-                                <h3 class="service-item-title">Straight Answers on Tools</h3>
-                                <p class="service-item-description">
-                                    What to use, what to skip, and how not to pay for software you don't need.
-                                </p>
-                            </div>
-                        </div>
-                        <p class="service-card-note">I'm local, so I'm happy to meet in person.</p>
-                    </div>
-
-                    <div class="service-card service-card-tertiary">
-                        <h2 class="service-card-title">Startups &amp; Healthcare Organizations</h2>
-                        <p class="service-card-lead">
-                            Experienced data help without hiring a full data team, whether you're a seed-stage startup, a
-                            growing health tech company, or a hospital system with a specific problem.
-                        </p>
-                        <div class="service-list">
-                            <div class="service-item">
-                                <h3 class="service-item-title">Data Foundations</h3>
-                                <p class="service-item-description">
-                                    Setting up or cleaning up your warehouse, pipelines, and BI tools (Snowflake, BigQuery, dbt,
-                                    Looker, Tableau, and friends).
-                                </p>
-                            </div>
-
-                            <div class="service-item">
-                                <h3 class="service-item-title">Metrics &amp; Analysis</h3>
-                                <p class="service-item-description">
-                                    Defining the numbers that matter, building dashboards leadership actually opens, and answering
-                                    the questions that come up before the board meeting.
-                                </p>
-                            </div>
-
-                            <div class="service-item">
-                                <h3 class="service-item-title">Healthcare Data</h3>
-                                <p class="service-item-description">
-                                    Claims, clinical and EHR data, outcomes measurement, regulatory reporting. I've worked on the
-                                    provider, payer, and health tech sides, so I know where the data gets messy.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Training & How It Works -->
-                <div class="services-column">
-                    <div class="service-card service-card-secondary">
-                        <h2 class="service-card-title">Training &amp; Workshops</h2>
-                        <p class="service-card-lead">For teams that want to get better with data themselves.</p>
-                        <div class="service-list">
-                            <div class="service-item">
-                                <h3 class="service-item-title">Skills Training</h3>
-                                <p class="service-item-description">
-                                    Hands-on SQL, Excel, and data viz, from one-on-one sessions to full teams, using your own data
-                                    whenever possible.
-                                </p>
-                            </div>
-
-                            <div class="service-item">
-                                <h3 class="service-item-title">Thinking Like an Analyst</h3>
-                                <p class="service-item-description">
-                                    The part most courses skip: framing the question, avoiding common data traps, and presenting
-                                    findings to people who just want the answer.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="engagement-card">
-                        <h3 class="engagement-title">How It Works</h3>
-                        <div class="engagement-steps">
-                            <div class="engagement-step">
-                                <div class="engagement-step-number">1</div>
-                                <span class="engagement-step-text">Free 30-minute call</span>
-                            </div>
-                            <div class="engagement-step">
-                                <div class="engagement-step-number">2</div>
-                                <span class="engagement-step-text">Scope &amp; proposal</span>
-                            </div>
-                            <div class="engagement-step">
-                                <div class="engagement-step-number">3</div>
-                                <span class="engagement-step-text">The work</span>
-                            </div>
-                            <div class="engagement-step">
-                                <div class="engagement-step-number">4</div>
-                                <span class="engagement-step-text">Handoff, so you're not stuck depending on me</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cta-section">
-                <div class="cta-card">
-                    <h2 class="cta-title">Not Sure Where to Start?</h2>
-                    <p class="cta-description">
-                        Send me a quick note about what you're working on and we'll set up a call. If I'm not the right fit,
-                        I'll tell you, and I'll try to point you to someone who is.
-                    </p>
-
-                    <a href="mailto:mitch@rivervalleyanalytics.com?subject=Work With Me Inquiry&body=Hi Mitch,%0D%0A%0D%0AHere's a bit about my organization and what I'm working on:%0D%0A%0D%0A"
-                       class="btn btn-cta">
-                        <span class="btn-icon">✉</span>
-                        <span>Email Me</span>
-                    </a>
-
-                    <p class="cta-note">I usually reply within a day or two.</p>
-                </div>
+        <!-- Overview -->
+        <div class="container service-picker">
+            <div class="grid-3">
+                <a href="#small-businesses" class="card">
+                    <div class="icon icon-green"></div>
+                    <span class="tag">Local businesses</span>
+                    <h3>Small businesses</h3>
+                    <p>Dashboards, automation, and straight answers on tools for businesses in Western Mass.</p>
+                    <span class="link-arrow link-down">See details</span>
+                </a>
+                <a href="#startups-healthcare" class="card">
+                    <div class="icon icon-stone"></div>
+                    <span class="tag">Startups &amp; healthcare</span>
+                    <h3>Startups &amp; healthcare organizations</h3>
+                    <p>Data foundations, metrics, and healthcare data expertise without a full-time hire.</p>
+                    <span class="link-arrow link-down">See details</span>
+                </a>
+                <a href="#training" class="card">
+                    <div class="icon icon-slate"></div>
+                    <span class="tag">Teams</span>
+                    <h3>Training &amp; workshops</h3>
+                    <p>Hands-on SQL, Excel, and data viz, plus how to think like an analyst.</p>
+                    <span class="link-arrow link-down">See details</span>
+                </a>
             </div>
         </div>
+
+        <!-- Small businesses -->
+        <section class="section section-alt service" id="small-businesses">
+            <div class="container service-grid">
+                <div class="service-intro">
+                    <span class="tag">Local businesses</span>
+                    <h2>Small businesses in Western Mass</h2>
+                    <div class="divider"></div>
+                    <p>
+                        You know your business. You just don't have time to dig through five different tools to figure out
+                        how it's doing.
+                    </p>
+                    <p class="service-note">I'm local, so I'm happy to meet in person.</p>
+                </div>
+                <div class="card card-slate service-items">
+                    <div class="service-item">
+                        <h3>Dashboards &amp; reporting</h3>
+                        <p>One place to see sales, costs, and customers, built from the tools you already use.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Automating the busywork</h3>
+                        <p>
+                            If someone on your team spends Friday afternoons copying numbers into a spreadsheet, we can
+                            probably fix that. Sometimes AI is the right tool for it. Sometimes a simple script is.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Straight answers on tools</h3>
+                        <p>What to use, what to skip, and how not to pay for software you don't need.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Startups & healthcare -->
+        <section class="section service" id="startups-healthcare">
+            <div class="container service-grid">
+                <div class="service-intro">
+                    <span class="tag">Startups &amp; healthcare</span>
+                    <h2>Startups &amp; healthcare organizations</h2>
+                    <div class="divider"></div>
+                    <p>
+                        Experienced data help without hiring a full data team, whether you're a seed-stage startup, a
+                        growing health tech company, or a hospital system with a specific problem.
+                    </p>
+                </div>
+                <div class="card card-stone service-items">
+                    <div class="service-item">
+                        <h3>Data foundations</h3>
+                        <p>
+                            Setting up or cleaning up your warehouse, pipelines, and BI tools (Snowflake, BigQuery, dbt,
+                            Looker, Tableau, and friends).
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Metrics &amp; analysis</h3>
+                        <p>
+                            Defining the numbers that matter, building dashboards leadership actually opens, and answering
+                            the questions that come up before the board meeting.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Healthcare data</h3>
+                        <p>
+                            Claims, clinical and EHR data, outcomes measurement, regulatory reporting. I've worked on the
+                            provider, payer, and health tech sides, so I know where the data gets messy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Training -->
+        <section class="section section-alt service" id="training">
+            <div class="container service-grid">
+                <div class="service-intro">
+                    <span class="tag">Teams</span>
+                    <h2>Training &amp; workshops</h2>
+                    <div class="divider"></div>
+                    <p>For teams that want to get better with data themselves.</p>
+                </div>
+                <div class="card card-green service-items">
+                    <div class="service-item">
+                        <h3>Skills training</h3>
+                        <p>
+                            Hands-on SQL, Excel, and data viz, from one-on-one sessions to full teams, using your own data
+                            whenever possible.
+                        </p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Thinking like an analyst</h3>
+                        <p>
+                            The part most courses skip: framing the question, avoiding common data traps, and presenting
+                            findings to people who just want the answer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How it works</h2>
+                    <div class="divider"></div>
+                </div>
+                <ol class="steps">
+                    <li class="step">
+                        <h3>Free 30-minute call</h3>
+                        <p>You tell me what's going on, and I ask a lot of questions.</p>
+                    </li>
+                    <li class="step">
+                        <h3>Scope &amp; proposal</h3>
+                        <p>A short written plan covering what I'll do, how long it takes, and what it costs.</p>
+                    </li>
+                    <li class="step">
+                        <h3>The work</h3>
+                        <p>Regular check-ins along the way, so there are no surprises at the end.</p>
+                    </li>
+                    <li class="step">
+                        <h3>Handoff</h3>
+                        <p>Documentation and a walkthrough, so you're not stuck depending on me.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-band">
+            <div class="container">
+                <h2>Not sure where to start?</h2>
+                <p>
+                    Send me a quick note about what you're working on and we'll set up a call. If I'm not the right fit,
+                    I'll tell you, and I'll try to point you to someone who is.
+                </p>
+                <a href="mailto:mitch@rivervalleyanalytics.com?subject=Work With Me Inquiry&body=Hi Mitch,%0D%0A%0D%0AHere's a bit about my organization and what I'm working on:%0D%0A%0D%0A" class="btn btn-ochre">Email me</a>
+                <p class="cta-note">I usually reply within a day or two.</p>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="public/images/river-valley-logo.png" alt="River Valley Analytics Logo" class="footer-logo-img">
-                        <h3 class="footer-brand-title">River Valley Analytics</h3>
+                <div>
+                    <div class="footer-brand">
+                        <img src="public/images/river-valley-logo.png" alt="" class="logo-light">
+                        <span>River Valley Analytics</span>
                     </div>
-                    <p class="footer-brand-text">Data help for small businesses, startups, and healthcare teams.</p>
+                    <p>Data help for small businesses, startups, and healthcare teams.</p>
                 </div>
-
-                <div class="footer-contact">
-                    <h4 class="footer-section-title">Contact</h4>
-                    <div class="footer-links">
-                        <a href="mailto:mitch@rivervalleyanalytics.com" class="footer-link">
-                            <span>mitch@rivervalleyanalytics.com</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/gravesmitchell/" target="_blank" rel="noopener noreferrer" class="footer-link">
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:mitch@rivervalleyanalytics.com">mitch@rivervalleyanalytics.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/gravesmitchell/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
                 </div>
-
-                <div class="footer-newsletter">
-                    <h4 class="footer-section-title">Newsletter</h4>
-                    <p class="footer-newsletter-text">Occasional posts from The Everyday Analyst</p>
-                    <a href="https://theeverydayanalyst.substack.com/" target="_blank" rel="noopener noreferrer" class="btn btn-newsletter">
-                        Subscribe
-                    </a>
+                <div>
+                    <h4>Newsletter</h4>
+                    <ul>
+                        <li><a href="the-everyday-analyst.html">The Everyday Analyst</a></li>
+                        <li><a href="https://theeverydayanalyst.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe on Substack</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 River Valley Analytics. All rights reserved.</p>
-            </div>
+            <div class="footer-bottom">© 2026 River Valley Analytics</div>
         </div>
     </footer>
 
+    <script src="site.js"></script>
 </body>
 </html>

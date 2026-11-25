@@ -1,30 +1,20 @@
-# River Valley Analytics Website
+# River Valley Analytics
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Personal consulting site, live at [rivervalleyanalytics.com](https://rivervalleyanalytics.com). Plain HTML and CSS served by GitHub Pages from `main`.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/mitchtgraves-gmailcoms-projects/v0-river-valley-analytics-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/oLO5t75dmVi)
+## Files
 
-## Overview
+- `index.html`, `about.html`, `work-with-me.html`, `the-everyday-analyst.html`: the four pages
+- `site.css`: all styles. Colors, fonts, and spacing are variables at the top.
+- `site.js`: mobile menu toggle
+- `public/images/`: logo and headshot
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Editing
 
-## Deployment
+Open any `.html` file in a browser to preview. The Substack subscribe embed only loads when served over http:
 
-Your project is live at:
+```
+python3 -m http.server 8000
+```
 
-**[https://vercel.com/mitchtgraves-gmailcoms-projects/v0-river-valley-analytics-website](https://vercel.com/mitchtgraves-gmailcoms-projects/v0-river-valley-analytics-website)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/projects/oLO5t75dmVi](https://v0.app/chat/projects/oLO5t75dmVi)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+When you change `site.css`, bump the version in each page's stylesheet link (`site.css?v=1` → `?v=2`) so browsers don't keep the old file.

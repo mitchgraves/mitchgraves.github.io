@@ -5,163 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>River Valley Analytics</title>
     <meta name="description" content="Data help for small businesses in Western Mass, startups, and healthcare organizations. Dashboards, data foundations, healthcare data expertise, and training.">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <meta property="og:title" content="River Valley Analytics">
+    <meta property="og:description" content="Data help for small businesses in Western Mass, startups, and healthcare organizations.">
+    <meta property="og:image" content="https://rivervalleyanalytics.com/public/images/river-valley-logo.png">
+    <meta property="og:url" content="https://rivervalleyanalytics.com/">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="public/images/river-valley-logo.png">
+    <link rel="stylesheet" href="site.css?v=1">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-content">
-                <a href="index.html" class="nav-brand">
-                    <img src="public/images/river-valley-logo.png" alt="River Valley Analytics Logo" class="nav-logo">
-                    <span class="nav-title">River Valley Analytics</span>
-                </a>
-
-                <div class="nav-links">
-                    <a href="index.html" class="nav-link active">Home</a>
-                    <a href="about.html" class="nav-link">About Me</a>
-                    <a href="work-with-me.html" class="nav-link">Work With Me</a>
-                    <a href="the-everyday-analyst.html" class="nav-link">The Everyday Analyst</a>
-                </div>
-            </div>
+    <nav class="site-nav">
+        <div class="container site-nav-inner">
+            <a href="index.html" class="brand">
+                <img src="public/images/river-valley-logo.png" alt="" class="logo">
+                <span>River Valley Analytics</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work-with-me.html">Work With Me</a></li>
+                <li><a href="the-everyday-analyst.html">The Everyday Analyst</a></li>
+                <li><a href="mailto:mitch@rivervalleyanalytics.com?subject=Let's talk" class="btn btn-sm">Let's talk</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
+        <!-- Hero -->
         <section class="hero">
-            <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-content">
-                        <div class="hero-logo">
-                            <img src="public/images/river-valley-logo.png" alt="River Valley Analytics Logo" class="hero-logo-img">
-                        </div>
-
-                        <h1 class="hero-title">
-                            River Valley
-                            <span class="hero-title-accent">Analytics</span>
-                        </h1>
-                        <div class="hero-divider"></div>
-
-                        <p class="hero-description">
-                            I help small businesses, startups, and healthcare organizations make sense of their data, and then actually use it.
-                        </p>
-
-                        <div class="hero-buttons">
-                            <a href="work-with-me.html" class="btn btn-primary">Work With Me</a>
-                            <a href="about.html" class="btn btn-secondary">About Mitch</a>
-                            <a href="the-everyday-analyst.html" class="btn btn-tertiary">The Everyday Analyst</a>
-                        </div>
+            <div class="container hero-grid">
+                <div>
+                    <span class="eyebrow">Data consulting &amp; training · Western Mass</span>
+                    <h1>Make sense of your data, <span class="hl">and then actually use it.</span></h1>
+                    <p class="hero-lead">
+                        I help small businesses, startups, and healthcare organizations turn messy data into
+                        answers they can act on.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="mailto:mitch@rivervalleyanalytics.com?subject=Let's talk" class="btn">Email me</a>
+                        <a href="work-with-me.html" class="btn btn-ghost">See how I can help</a>
                     </div>
+                </div>
 
-                    <div class="hero-card-container">
-                        <div class="hero-decorative hero-decorative-1"></div>
-                        <div class="hero-decorative hero-decorative-2"></div>
-                        <div class="hero-card">
-                            <h3 class="hero-card-title">Hi, I'm Mitch.</h3>
-                            <p class="hero-card-text">
-                                I've spent 10 years working in data, mostly in healthcare. I work with local businesses here in
-                                Western Mass, and with teams anywhere that need an experienced data person without hiring one full-time.
-                            </p>
-                        </div>
-                    </div>
+                <div class="hero-card-wrap">
+                <div class="card card-slate hero-card">
+                    <img src="public/images/river-valley-logo.png" alt="River Valley Analytics logo" class="logo-light">
+                    <h2>Hi, I'm Mitch.</h2>
+                    <p>
+                        I've spent 10 years working in data, mostly in healthcare. I work with local businesses here in
+                        Western Mass, and with teams anywhere that need an experienced data person without hiring one
+                        full-time.
+                    </p>
+                    <a href="about.html" class="link-arrow">More about me</a>
+                </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="features">
+        <!-- What I do -->
+        <section class="section section-alt">
             <div class="container">
-                <div class="features-header">
-                    <h2 class="features-title">What I Do</h2>
-                    <div class="features-divider"></div>
+                <div class="section-header">
+                    <h2>What I do</h2>
+                    <div class="divider"></div>
+                    <p>Three kinds of work, depending on who you are and what you need.</p>
                 </div>
 
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon feature-icon-strategy"></div>
-                        <h3 class="feature-title">Small Businesses</h3>
-                        <p class="feature-description">
-                            Your numbers live in QuickBooks, Shopify, and a spreadsheet someone built years ago. I'll pull them
-                            into reports you'll actually check, and automate the busywork along the way.
+                <div class="grid-3">
+                    <a href="work-with-me.html#small-businesses" class="card">
+                        <div class="icon icon-green"></div>
+                        <span class="tag">Local businesses</span>
+                        <h3>Small businesses</h3>
+                        <p>
+                            Your numbers live in QuickBooks, Shopify, and a spreadsheet someone built years ago. I'll pull
+                            them into reports you'll actually check, and automate the busywork along the way.
                         </p>
-                    </div>
+                        <span class="link-arrow">Learn more</span>
+                    </a>
 
-                    <div class="feature-card">
-                        <div class="feature-icon feature-icon-insights"></div>
-                        <h3 class="feature-title">Startups &amp; Healthcare</h3>
-                        <p class="feature-description">
-                            Senior data help without the full-time hire. Data foundations, metrics and dashboards, plus deep
-                            experience with healthcare data.
+                    <a href="work-with-me.html#startups-healthcare" class="card">
+                        <div class="icon icon-stone"></div>
+                        <span class="tag">Startups &amp; healthcare</span>
+                        <h3>Senior data help, no full-time hire</h3>
+                        <p>
+                            Data foundations, metrics and dashboards, plus deep experience with healthcare data for health
+                            tech companies, providers, and payers.
                         </p>
-                    </div>
+                        <span class="link-arrow">Learn more</span>
+                    </a>
 
-                    <div class="feature-card">
-                        <div class="feature-icon feature-icon-training"></div>
-                        <h3 class="feature-title">Training</h3>
-                        <p class="feature-description">
-                            Hands-on SQL, Excel, and data viz, and the harder part: asking good questions and explaining what
-                            you found.
+                    <a href="work-with-me.html#training" class="card">
+                        <div class="icon icon-slate"></div>
+                        <span class="tag">Teams</span>
+                        <h3>Training &amp; workshops</h3>
+                        <p>
+                            Hands-on SQL, Excel, and data viz, and the harder part: asking good questions and explaining
+                            what you found.
                         </p>
-                    </div>
-                </div>
-
-                <div class="cta-section">
-                    <div class="cta-card">
-                        <h2 class="cta-title">Not Sure What You Need?</h2>
-                        <p class="cta-description">
-                            Most projects start with a free 30-minute call. Tell me what you're working on and we'll figure it out.
-                        </p>
-                        <a href="mailto:mitch@rivervalleyanalytics.com?subject=Let's talk" class="btn btn-cta">
-                            <span class="btn-icon">✉</span>
-                            <span>Email Me</span>
-                        </a>
-                    </div>
+                        <span class="link-arrow">Learn more</span>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="public/images/river-valley-logo.png" alt="River Valley Analytics Logo" class="footer-logo-img">
-                        <h3 class="footer-brand-title">River Valley Analytics</h3>
+                <div>
+                    <div class="footer-brand">
+                        <img src="public/images/river-valley-logo.png" alt="" class="logo-light">
+                        <span>River Valley Analytics</span>
                     </div>
-                    <p class="footer-brand-text">Data help for small businesses, startups, and healthcare teams.</p>
+                    <p>Data help for small businesses, startups, and healthcare teams.</p>
                 </div>
-
-                <div class="footer-contact">
-                    <h4 class="footer-section-title">Contact</h4>
-                    <div class="footer-links">
-                        <a href="mailto:mitch@rivervalleyanalytics.com" class="footer-link">
-                            <span>mitch@rivervalleyanalytics.com</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/gravesmitchell/" target="_blank" rel="noopener noreferrer" class="footer-link">
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:mitch@rivervalleyanalytics.com">mitch@rivervalleyanalytics.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/gravesmitchell/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
                 </div>
-
-                <div class="footer-newsletter">
-                    <h4 class="footer-section-title">Newsletter</h4>
-                    <p class="footer-newsletter-text">Occasional posts from The Everyday Analyst</p>
-                    <a href="https://theeverydayanalyst.substack.com/" target="_blank" rel="noopener noreferrer" class="btn btn-newsletter">
-                        Subscribe
-                    </a>
+                <div>
+                    <h4>Newsletter</h4>
+                    <ul>
+                        <li><a href="the-everyday-analyst.html">The Everyday Analyst</a></li>
+                        <li><a href="https://theeverydayanalyst.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe on Substack</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 River Valley Analytics. All rights reserved.</p>
-            </div>
+            <div class="footer-bottom">© 2026 River Valley Analytics</div>
         </div>
     </footer>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="site.js"></script>
 </body>
 </html>
